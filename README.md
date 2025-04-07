@@ -1,7 +1,0 @@
-<h1 align="center"> CS50-Harvard | Fundamentos de Programação </h1>
-<h2 align="center"> Cours under Harvard University under basic programming </h2>
-
-<p align="center">
-<img loading="lazy" src="https://img.shields.io/badge/HARVARD-red"/>
-  
-</p>

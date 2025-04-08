@@ -1,0 +1,11 @@
+sort1 uses: BUBBLE
+
+How do you know?: uses bubble sort because it performs many swaps on unsorted lists but is faster on sorted lists.
+
+sort2 uses: MERGE SORT
+
+How do you know?: because it divides the list and has consistent O(n log n) performance.
+
+sort3 uses: SELECTION
+
+How do you know?: uses selection sort because it finds the smallest element each time and performs fewer swaps.

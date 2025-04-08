@@ -1,0 +1,12 @@
+Here is a closer look into the person's music listening preferences based on the requested:
+
+Average of ENERGY: 0.659
+Average of VALENCE: 0.484443
+Average of DANCEABILITY: 0.71646
+
+On an in-depth search, the valence of the music user can dictate the type of music.
+In this case, the VALENCE is closer to 0.5 concluding that the person listens to happy and sad music
+That said I would categorize it as Blue Aura
+
+For the second response, we would need more data from the person to categorize the user's aura.
+Not too far away from it we would need to understand better how the calculation of the aura is done, so we can use the data we have to calculate it more accurately.

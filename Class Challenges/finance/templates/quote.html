@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <h1>Quote</h1>
+    <form action="{{ url_for('quote') }}" method="post">
+        <label for="symbol">Symbol:</label>
+        <input type="text" name="symbol" id="symbol" required>
+        <br>
+        <button type="submit">Get Quote</button>
+    </form>
+    {% if quote %}
+    <h2>{{ quote.name }} ({{ quote.symbol }}): {{ quote.price | usd }}</h2>
+    {% endif %}
+{% endblock %}

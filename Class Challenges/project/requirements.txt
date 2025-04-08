@@ -1,0 +1,5 @@
+sqalchemy
+werkzeug
+streamlit
+pandas
+streamlit_calendar

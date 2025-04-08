@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            function checkMultipleChoice(answerButton, correct) {
+                const resultText = document.getElementById("multiple-choice-result");
+                if (correct) {
+                    answerButton.style.backgroundColor = "green";
+                    resultText.textContent = "Correct!";
+                    resultText.style.color = "green";
+                } else {
+                    answerButton.style.backgroundColor = "red";
+                    resultText.textContent = "Incorrect";
+                    resultText.style.color = "red";
+                }
+            }
+
+            function checkFreeResponse() {
+                const userAnswer = document.getElementById("free-response").value.trim().toLowerCase();
+                const correctAnswer = "paris";
+                const resultText = document.getElementById("free-response-result");
+                const inputField = document.getElementById("free-response");
+
+                if (userAnswer === correctAnswer) {
+                    inputField.style.backgroundColor = "green";
+                    resultText.textContent = "Correct!";
+                    resultText.style.color = "green";
+                } else {
+                    inputField.style.backgroundColor = "red";
+                    resultText.textContent = "Incorrect";
+                    resultText.style.color = "red";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice</h2>
+                <hr>
+                <h3>What is the capital of France?</h3>
+                <button onclick="checkMultipleChoice(this, false)">Berlin</button>
+                <button onclick="checkMultipleChoice(this, true)">Paris</button>
+                <button onclick="checkMultipleChoice(this, false)">Madrid</button>
+                <p id="multiple-choice-result"></p>
+            </div>
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>What is the capital of France?</h3>
+                <input type="text" id="free-response" placeholder="Type your answer here">
+                <button onclick="checkFreeResponse()">Submit</button>
+                <p id="free-response-result"></p>
+            </div>
+        </div>
+    </body>
+</html>
